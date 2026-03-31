@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="gradient-bg rounded-lg p-1.5">
             <BrainCircuit className="h-5 w-5 text-primary-foreground" />
           </div>
-          <span className="font-heading text-lg font-bold">AI Detect</span>
+          <span className="font-heading text-lg font-bold">AI DETECT</span>
         </div>
 
         <div className="flex items-center gap-1 rounded-xl bg-secondary p-1">
