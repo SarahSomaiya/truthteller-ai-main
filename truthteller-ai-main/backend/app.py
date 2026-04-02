@@ -78,8 +78,3 @@ def index():
         'name': 'TruthTeller AI Backend',
         'version': '1.0.0'
     }), 200
-
-
-# REQUIRED FOR VERCEL
-def handler(request):
-    return app(request)
