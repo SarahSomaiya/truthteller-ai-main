@@ -4,15 +4,5 @@
       "src": "backend/app.py",
       "use": "@vercel/python"
     }
-  ],
-  "routes": [
-    {
-      "src": "/api",
-      "dest": "backend/app.py"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/app.py"
-    }
   ]
 }

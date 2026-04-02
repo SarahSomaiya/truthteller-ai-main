@@ -20,13 +20,14 @@ const AnalysisTab = () => {
 
     setLoading(true);
     try {
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
       let res: Response;
       if (file) {
         const formData = new FormData();
         formData.append("file", file);
-        res = await fetch("http://localhost:5000/predict", { method: "POST", body: formData });
+        res = await fetch(`${apiBaseUrl}/api/predict`, { method: "POST", body: formData });
       } else {
-        res = await fetch("http://localhost:5000/predict", {
+        res = await fetch(`${apiBaseUrl}/api/predict`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text }),
