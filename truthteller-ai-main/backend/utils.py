@@ -39,7 +39,6 @@ from docx import Document
 from pptx import Presentation
 from werkzeug.utils import secure_filename
 import joblib
-
 import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords

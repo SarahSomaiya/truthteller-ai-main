@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 
-def fetch_and_prepare_data(max_samples_per_class=5000):
+def fetch_and_prepare_data(max_samples_per_class=5000):                                            
     print("Downloading Hello-SimpleAI/HC3 dataset via HF API...")
     
     texts = []
