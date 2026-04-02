@@ -72,6 +72,7 @@ def health():
     return jsonify({'status': 'ok'}), 200
 
 
+@app.route('/', methods=['GET'])
 @app.route('/api', methods=['GET'])
 def index():
     return jsonify({
