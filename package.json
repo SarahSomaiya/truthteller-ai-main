@@ -1,0 +1,10 @@
+{
+  "name": "truthteller-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd truthteller-ai-main && npm install && npm run build && cd .. && npx shx cp -r truthteller-ai-main/dist dist"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4"
+  }
+}
