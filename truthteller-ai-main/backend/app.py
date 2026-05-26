@@ -79,3 +79,6 @@ def index():
         'name': 'TruthTeller AI Backend',
         'version': '1.0.0'
     }), 200
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
