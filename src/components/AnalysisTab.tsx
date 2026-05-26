@@ -20,7 +20,7 @@ const AnalysisTab = () => {
 
     setLoading(true);
     try {
-      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || (import.meta.env.PROD ? "https://sarahsom-truthteller-api.hf.space" : "http://localhost:5000");
       let res: Response;
       if (file) {
         const formData = new FormData();
